@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 918px;
+    max-width: 57.375rem;
     margin: 0 auto;
 }
 
@@ -21,12 +21,12 @@ button {
     background-color: transparent;
     color: #fff;
     border: 1px solid #8257E5;
-    border-radius: 6px;
-    padding: 10px 30px;
+    border-radius: 0.25rem;
+    padding: 0.625rem 1.875rem;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 5rem;
 }
 
 /* ====== HEADER */
@@ -42,7 +42,7 @@ header nav ul {
     list-style: none;
 }
 header nav ul li a {
-    padding: 0 12px;
+    padding: 0 0.75rem;
     text-decoration: none;
     color: #fff;
 }

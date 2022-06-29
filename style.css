@@ -1,3 +1,5 @@
+/* General */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,13 +10,42 @@
     --bg-color: #000;
     --main-color: #8257e5;
     --main-color-second: #fff;
+    --color-shadown: #000;
 }
 
 body {
     background-color: var(--bg-color);
-    color: #fff;
+    color: var(--main-color-second);
     font-family: 'Manrope', sans-serif;
 }
+
+.container {
+    max-width: 918px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+button {
+    color: var(--main-color-second);
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 11px;
+    transition: all 0.4s linear;
+}
+
+button:hover {
+    background-color: var(--main-color);
+    transition: all 0.4s linear;
+} 
+
+/* Header */
 
 header {
     height: 50px;
@@ -40,12 +71,9 @@ header nav ul a {
     padding: 0 20px;
 }
 
-.container {
-    max-width: 918px;
-    margin: 0 auto;
-}
+/* Content Area */
 
-.banner--area {
+.content--area {
     height:calc(100vh - 50px);
     display: flex;
     flex-direction: column;
@@ -53,7 +81,7 @@ header nav ul a {
     justify-content: end;
 }
 
-.banner--area::before {
+.content--area::before {
     content: "";
     width: 200px;
     height: 300px;
@@ -65,7 +93,7 @@ header nav ul a {
     z-index: -1;
 }
 
-.banner--area::after {
+.content--area::after {
     content: "";
     width: 200px;
     height: 300px;
@@ -77,40 +105,10 @@ header nav ul a {
     z-index: -1;
 }
 
-.banner--area h1 {
-    font-size: 80px;
-}
-
-
-
-
-
-
-button {
-    color: var(--main-color-second);
-    background-color: transparent;
-    padding: 10px 30px;
-    border: 1px solid var(--main-color);
-    border-radius: 4px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 11px;
-    transition: all 0.4s linear;
-}
-
-button:hover {
-    background-color: var(--main-color);
-    transition: all 0.4s linear;
-} 
-
-
-
-
-
-.great-code {
+.content--area .great-code {
     color: transparent;
-    text-shadow: -1px -1px 0 #000,
-        -2px -2px 0px #8257e5,
-        -1px 1px 0 #8257e5,
-        0px -2px 0 #8257e5;
+    text-shadow: -1px -1px 0 var(--color-shadown),
+        -2px -2px 0px var(--main-color),
+        -1px 1px 0 var(--main-color),
+        0px -2px 0 var(--main-color);
 }

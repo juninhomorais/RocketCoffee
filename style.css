@@ -4,8 +4,14 @@
     padding: 0;
 }
 
+:root {
+    --bg-color: #000;
+    --main-color: #8257e5;
+    --main-color-second: #fff;
+}
+
 body {
-    background-color: #000;
+    background-color: var(--bg-color);
     color: #fff;
     font-family: 'Manrope', sans-serif;
 }
@@ -29,7 +35,7 @@ header nav ul {
 
 header nav ul a {
     font-size: 14px;
-    color: #fff;
+    color: var(--main-color-second);
     text-decoration: none;
     padding: 0 20px;
 }
@@ -51,7 +57,7 @@ header nav ul a {
     content: "";
     width: 200px;
     height: 300px;
-    background-color: #8257e5;
+    background-color: var(--main-color);
     filter:blur(150px);
     position: absolute;
     right: 0;
@@ -63,7 +69,7 @@ header nav ul a {
     content: "";
     width: 200px;
     height: 300px;
-    background-color: #8257e5;
+    background-color: var(--main-color);
     filter:blur(150px);
     position: absolute;
     left: 0;
@@ -81,10 +87,10 @@ header nav ul a {
 
 
 button {
-    color: #fff;
+    color: var(--main-color-second);
     background-color: transparent;
     padding: 10px 30px;
-    border: 1px solid #8257E5;
+    border: 1px solid var(--main-color);
     border-radius: 4px;
     cursor: pointer;
     text-transform: uppercase;
@@ -93,7 +99,7 @@ button {
 }
 
 button:hover {
-    background-color: #8257e5;
+    background-color: var(--main-color);
     transition: all 0.4s linear;
 } 
 

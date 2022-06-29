@@ -10,51 +10,96 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.container {
-    max-width: 57.375rem;
-    margin: 0 auto;
+header {
+    height: 50px;
+    position: sticky;
+    top: 50px;
 }
-
-/* ===== GENERAL */
-
-button {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #8257E5;
-    border-radius: 0.25rem;
-    padding: 0.625rem 1.875rem;
-}
-
-h1 {
-    font-size: 5rem;
-}
-
-/* ====== HEADER */
 
 header nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #444;
+    align-items: center;
 }
 
 header nav ul {
-    display: flex;
     list-style: none;
+    display: inline-flex;
 }
 
-header nav ul li a {
-    padding: 0 0.75rem;
-    text-decoration: none;
+header nav ul a {
+    font-size: 14px;
     color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
 }
 
-/* ===== SECTION */
-
-section {
-    height: 100vh;
-    text-align: center;
+.container {
+    max-width: 918px;
+    margin: 0 auto;
 }
+
+.banner--area {
+    height:calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner--area::before {
+    content: "";
+    width: 200px;
+    height: 300px;
+    background-color: #8257e5;
+    filter:blur(150px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.banner--area::after {
+    content: "";
+    width: 200px;
+    height: 300px;
+    background-color: #8257e5;
+    filter:blur(150px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.banner--area h1 {
+    font-size: 80px;
+}
+
+
+
+
+
+
+button {
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid #8257E5;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 11px;
+    transition: all 0.4s linear;
+}
+
+button:hover {
+    background-color: #8257e5;
+    transition: all 0.4s linear;
+} 
+
+
+
+
 
 .great-code {
     color: transparent;

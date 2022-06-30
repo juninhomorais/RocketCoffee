@@ -113,6 +113,10 @@ header nav ul a {
         0px -2px 0 var(--main-color);
 }
 
+.content--area img {
+    width: 100%;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {

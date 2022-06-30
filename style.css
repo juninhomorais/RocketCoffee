@@ -25,18 +25,18 @@ body {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 button {
     color: var(--main-color-second);
     background-color: transparent;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     border: 1px solid var(--main-color);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.69rem;
     transition: all 0.4s linear;
 }
 
@@ -65,10 +65,10 @@ header nav ul {
 }
 
 header nav ul a {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--main-color-second);
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 /* Content Area */
@@ -121,6 +121,6 @@ header nav ul a {
 
 @media (max-width: 768px) {
     .content--mobile {
-        display: block!important;
+        display: block !important;
     }
 }

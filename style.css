@@ -120,7 +120,24 @@ header nav ul a {
 /* Responsive */
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    header nav button {
+        display: none;
+    }
     .content--mobile {
         display: block !important;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .content--mobile p {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 481px) {
+    h1 {
+        font-size: 3rem;
     }
 }

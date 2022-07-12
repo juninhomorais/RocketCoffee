@@ -57,7 +57,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 nav .logo {
     width: 170px;
     text-align: center;
@@ -123,30 +122,45 @@ nav ul a {
     width: 800px;
     position: relative;
     bottom: 0;
-    text-align: center;
 }
 
 /* Responsive */
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    .content img {
+        width: 650px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    nav .logo {
+        width: auto;
+        text-align: left;
+    }
+    nav button {
+        display: none;
+    }
+    .content img {
+        width: 100%;
+    }
+}
 
 @media (max-width: 768px) {
     h1 {
         font-size: 4rem;
     }
-    header nav button {
+    .banner--area::before {
         display: none;
     }
-    .content--mobile {
-        display: block !important;
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-    .content--mobile p {
-        margin-bottom: 2rem;
-    }
-}
-
-@media (max-width: 481px) {
-    h1 {
-        font-size: 3rem;
+    .banner--area::after {
+        left: auto;
+        bottom: -100px;
+        filter: blur(250px);
     }
 }

@@ -57,6 +57,11 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+nav .logo {
+    width: 170px;
+    text-align: center;
+}
 nav ul {
     list-style: none;
     display: inline-flex;

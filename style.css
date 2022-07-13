@@ -52,24 +52,33 @@ header {
     position: sticky;
     top: 30px;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 nav .logo {
     width: 170px;
     text-align: center;
 }
+
 nav ul {
     list-style: none;
     display: inline-flex;
 }
+
 nav ul a {
     font-size: 0.875rem;
     color: var(--main-color-second);
     text-decoration: none;
     margin: 0 1.25rem;
+}
+
+nav .open,
+nav .close {
+    display: none;
 }
 
 /* Content Area */
@@ -80,6 +89,7 @@ nav ul a {
     flex-direction: column;
     align-items: center;
 }
+
 .banner--area::before {
     content: "";
     width: 300px;
@@ -91,6 +101,7 @@ nav ul a {
     top: 0;
     z-index: -1;
 }
+
 .banner--area::after {
     content: "";
     width: 300px;
@@ -102,6 +113,7 @@ nav ul a {
     bottom: 0;
     z-index: -1;
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -109,6 +121,7 @@ nav ul a {
     justify-content: end;
     min-height: inherit;
 }
+
 .content .great-code {
     color: transparent;
     /*-webkit-text-stroke: 2px rgb(130, 87, 229);
@@ -118,6 +131,16 @@ nav ul a {
         -1px 1px 0 var(--main-color),
         0px -2px 0 var(--main-color);
 }
+
+.content--mobile {
+    display: none;
+}
+
+.content--mobile p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .content img {
     width: 800px;
     position: relative;
@@ -130,6 +153,7 @@ nav ul a {
     h1 {
         font-size: 4.5rem;
     }
+
     .content img {
         width: 650px;
     }
@@ -139,25 +163,24 @@ nav ul a {
     .container {
         padding: 0 1.5rem;
     }
+
     nav .logo {
         width: auto;
         text-align: left;
     }
-    nav .menu {
-        opacity: 0;
-        visibility: hidden;
-    }
-    nav.show .menu {
-        opacity: 1;
-        visibility: visible;
 
-        background-color: var(--bg-color);
-        height: 100vh;
-        width: 100vw;
+    nav .menu {
+        display: none;
     }
+
+    nav .open {
+        display: block;
+    }
+
     nav button {
         display: none;
     }
+
     .content img {
         width: 100%;
     }
@@ -167,12 +190,32 @@ nav ul a {
     h1 {
         font-size: 4rem;
     }
+
+    header {
+        border-bottom: 1px solid #29292E;
+        top: 0;
+        padding: 1rem 0;
+        height: auto;
+    }
     .banner--area::before {
         display: none;
     }
+
     .banner--area::after {
         left: auto;
         bottom: -100px;
         filter: blur(250px);
+    }
+    .content--mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 3rem;
     }
 }

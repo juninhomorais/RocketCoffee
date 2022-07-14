@@ -146,7 +146,7 @@ a {
     text-align: center;
 }
 .main--area .content img {
-    width: 800px;
+    width: 100%;
     position: relative;
     bottom: 0;
 }
@@ -172,7 +172,29 @@ a {
     .header--center .menu {
         justify-content: end;
     }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.8rem;
+    }
+    .header--center .menu {
+        display: none;
+    }
+
+    .main--area .content .content--mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
+    .main--area .content .content--mobile p {
+        font-size: 1.875rem;
+    }
+
     .main--area .content img {
-        width: 700px;
+        width: 80%;
     }
 }

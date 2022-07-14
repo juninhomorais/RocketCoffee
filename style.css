@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    /*background-color: var(--bg-color);*/
     color: var(--main-color-second);
     font-family: 'Manrope', sans-serif;
 }
@@ -28,7 +28,7 @@ h1 {
     font-size: 5rem;
 }
 
-button {
+.button {
     color: var(--main-color-second);
     background-color: transparent;
     padding: 0.625rem 1.875rem;
@@ -40,46 +40,51 @@ button {
     transition: all 0.4s linear;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--main-color);
     transition: all 0.4s linear;
 }
 
-/* Header */
-
-header {
-    height: 50px;
-    position: sticky;
-    top: 30px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo {
-    width: 170px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: inline-flex;
-}
-
-nav ul a {
-    font-size: 0.875rem;
+a {
     color: var(--main-color-second);
     text-decoration: none;
-    margin: 0 1.25rem;
 }
 
-nav .open,
-nav .close {
-    display: none;
+/* Header */
+
+.header--area {
+    position: relative;
 }
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+.header--left{
+    width: 200px;
+    text-align: center;
+}
+.header--center {
+    flex: 1;
+    font-size: 0.875rem;
+}
+.header--center ul {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+}
+.header--center .menu {
+    display: flex;
+    justify-content: center;
+}
+.header--right {
+    width: 200px;
+    display: flex;
+    justify-content: end;
+}
+
 
 /* Content Area */
 
@@ -88,6 +93,7 @@ nav .close {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 .banner--area::before {

@@ -79,6 +79,9 @@ a {
     display: flex;
     justify-content: center;
 }
+.header--center .menu-mobile {
+    display: none;
+}
 .header--right {
     width: 200px;
     display: flex;

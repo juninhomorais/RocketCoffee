@@ -158,3 +158,18 @@ a {
         text-align: left;
     }
 }
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 4.8rem;
+    }
+    .header--right {
+        display: none;
+    }
+    .header--center .menu {
+        justify-content: end;
+    }
+    .main--area .content img {
+        width: 700px;
+    }
+}

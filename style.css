@@ -61,6 +61,7 @@ a {
     align-items: center;
     width: 100%;
     position: absolute;
+    z-index: 1;
 }
 .header--left{
     width: 200px;
@@ -105,7 +106,6 @@ a {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: -1;
 }
 
 .banner--area::after {
@@ -117,7 +117,6 @@ a {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: -1;
 }
 
 .content {

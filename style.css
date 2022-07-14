@@ -199,3 +199,21 @@ a {
         width: 80%;
     }
 }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .main--area .content .content--mobile {
+        width: 70%;
+    }
+
+    .main--area .content .content--mobile p {
+        font-size: 1.25rem;
+    }
+    
+    .main--area .content img {
+        width: 100%;
+    }
+}
